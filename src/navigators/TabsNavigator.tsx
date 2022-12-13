@@ -14,9 +14,6 @@ export const TabsNavigator = () => {
       sceneContainerStyle={{ backgroundColor: 'white' }}
       screenOptions={{
         tabBarActiveTintColor: '#5856d6',
-        tabBarLabelStyle: {
-          marginBottom: 10,
-        },
         tabBarStyle: {
           position: 'absolute',
           backgroundColor: 'rgba(255,255,255,0.92)',
@@ -30,6 +27,7 @@ export const TabsNavigator = () => {
         name="HomeScreen"
         component={StackNavigator}
         options={{
+          headerShown: false,
           tabBarLabel: 'List',
           tabBarIcon: ({ color }) => (
             <Icon name="list-outline" color={color} size={25} />
@@ -40,6 +38,7 @@ export const TabsNavigator = () => {
         name="SearchScreen"
         component={SearchScreen}
         options={{
+          headerShown: false,
           tabBarLabel: 'Search',
           tabBarIcon: ({ color }) => (
             <Icon name="search-outline" color={color} size={25} />
