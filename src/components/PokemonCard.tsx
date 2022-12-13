@@ -14,7 +14,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { SimplePokemon } from '../interfaces/pokemon.interfaces';
 import { FadeInImage } from './FadeInImage';
 import { getColors } from '../helpers/getColors';
-import { RootStackParams } from '../navigators/StackNavigator';
+import { RootStackParams } from '../navigators/Tab1';
 
 const windowWidth = Dimensions.get('window').width;
 
